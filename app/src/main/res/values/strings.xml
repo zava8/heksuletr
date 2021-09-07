@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <string name="app_name">heksuletr</string>
+    <string name="action_settings">settings</string>
+    <string name="nav_drawer_standard">standard</string>
+    <string name="nav_drawer_programmer">programmer</string>
+    <string name="nav_themes">Thiims</string>
+    <string name="nav_share">share</string>
+    <string name="nav_about">Abaut</string>
+    <string name="nav_contacts">contacts</string>
+    <string name="max_digits_warning">tuu mAny symbols</string>
+    <string name="not_a_number">not a number</string>
+    <string name="share_website">zava8.github.io</string>
+    <string name="share_subject">2 Thmbs sho 8 fiNgers kaunt. so 8+8=10=4*4</string>
+    <string name="share_using">share using</string>
+    <string name="about_title">About Calculator</string>
+    <string name="about_program">vk.com/etphor heksadesiml dizitl calculator</string>
+    <string name="button_ok">ok</string>
+    <string name="title_activity_history">histri</string>
+
+<!--    heksdizit strings-->
+    <string name="heks_len_string" translatable="false">A</string>
+    <string name="heks_zilevn_string" translatable="false">B</string>
+    <string name="heks_kvlv_string" translatable="false">C</string>
+    <string name="heks_dblu_string" translatable="false">D</string>
+    <string name="heks_Aks_string" translatable="false">E</string>
+    <string name="heks_phen_string" translatable="false">F</string>
+
+
+
+<!--    operator strings-->
+    <string name="decimal_point_operator_string" translatable="false">.</string>
+    <string name="multiply_operator_string" translatable="false">*</string>
+    <string name="remainder_divide_operator_string" translatable="false">÷_R</string>
+    <string name="And_operator_string" translatable="false">And</string>
+    <string name="or_operator_string" translatable="false">or</string>
+    <string name="zor_operator_string" translatable="false">zor</string>
+    <string name="not_operator_string" translatable="false">not</string>
+    <string name="lsh_operator_string" translatable="false">lsh_V</string>
+    <string name="rsh_operator_string" translatable="false">rsh_W</string>
+    <string name="Asin_operator_string" translatable="false">Asin</string>
+    <string name="Acos_operator_string" translatable="false">Acos</string>
+    <string name="AtAn_operator_string" translatable="false">AtAn</string>
+    <string name="tAn_operator_string" translatable="false">tAn</string>
+    <string name="denominator_operator_string" translatable="false">1/a</string>
+    <string name="eksponent_operator_string" translatable="false">a^n</string>
+    <string name="pavr_operator_string" translatable="false">a^y</string>
+    <string name="skuare_operator_string" translatable="false">a^2</string>
+    <string name="abs_operator_string" translatable="false">|a|</string>
+    <string name="skuareroot_operator_string" translatable="false">√</string>
+    <string name="factorial_operator_string" translatable="false">a!</string>
+    <string name="get_remainder_button_string" translatable="false">÷_M</string>
+    <string name="heks_cb_label" translatable="false">h8</string>
+    <string name="phlot_div_button_label" translatable="false">÷_f</string>
+    <string name="decimal_point_label" translatable="false">.0?</string>
+    <string name="app_title_string" translatable="false">zava8.github.io</string>
+    <string name="zlang_nav_title" translatable="false">zlANg</string>
+
+    <string-array name="decimal_points_selection_array">
+        <item>0</item>
+        <item>0.0</item>
+        <item>0.00</item>
+        <item>0.000</item>
+        <item>0.0000</item>
+        <item>0.00000</item>
+        <item>0.000000</item>
+        <item>0.0000000</item>
+    </string-array>
+
+    <string-array name="dizit_nems_array">
+        <item>ek</item>
+        <item>Do</item>
+        <item>Tiin</item>
+        <item>car</item>
+        <item>pac</item>
+        <item>che</item>
+        <item>saT</item>
+        <item>ath</item>
+        <item>no</item>
+        <item>Ds</item>
+        <item>zyarh</item>
+        <item>barh</item>
+        <item>Terh</item>
+        <item>coDH</item>
+        <item>pnDrh</item>
+    </string-array>
+
+</resources>

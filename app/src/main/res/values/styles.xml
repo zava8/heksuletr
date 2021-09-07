@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="accentColor">@color/accentColor</item>
+        <item name="dizits_tekst_color">@color/dizits_tekst_color</item>
+        <item name="app_bar_bg_color">@color/app_bar_bg_color</item>
+        <item name="themeColor">@color/themeColor</item>
+        <item name="primaryTextColor"> @color/primaryTextColor</item>
+        <item name="secondaryTextColor">@color/secondaryTextColor</item>
+        <item name="disabledTextColor">@color/disabledTextColor</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="textAccentColor">@color/textAccentColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="accentColor">@color/accentColorDark</item>
+        <item name="themeColor">@color/themeColorDark</item>
+        <item name="primaryTextColor"> @color/primaryTextColorDark</item>
+        <item name="secondaryTextColor">@color/secondaryTextColorDark</item>
+        <item name="disabledTextColor">@color/disabledTextColorDark</item>
+        <item name="backgroundColor">@color/backgroundColorDark</item>
+        <item name="textAccentColor">@color/textAccentColorDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

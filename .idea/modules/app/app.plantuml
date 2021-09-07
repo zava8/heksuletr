@@ -1,0 +1,197 @@
+@startuml
+
+title __PROGRAMMER-CALCULATOR.APP's Class Diagram__\n
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace Interfaces {
+      interface com.annushkaproject.programmerscalculator.Interfaces.AppearanceUpdateInterface {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace activities {
+      class com.annushkaproject.programmerscalculator.activities.HistoryActivity {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace activities {
+      class com.annushkaproject.programmerscalculator.activities.MainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace fragments {
+      class com.annushkaproject.programmerscalculator.fragments.ProgrammerFragment {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace fragments {
+      class com.annushkaproject.programmerscalculator.fragments.StandardFragment {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace fragments {
+      class com.annushkaproject.programmerscalculator.fragments.ThemesFragment {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace fragments {
+      class com.annushkaproject.programmerscalculator.fragments.c_handle_decimal_spinboks {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace fragments {
+      class com.annushkaproject.programmerscalculator.fragments.langs_fragment {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace managers {
+      class com.annushkaproject.programmerscalculator.managers.HistoryManager {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      class com.annushkaproject.programmerscalculator.model.CalculationModel {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      class com.annushkaproject.programmerscalculator.model.HistoryResult {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      enum Operator {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      class com.annushkaproject.programmerscalculator.model.ProgrammerCalcModel {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      enum ThemeSetting {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      enum int_size_enum {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace model {
+      enum kl_lang_setting {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace utils {
+      class com.annushkaproject.programmerscalculator.utils.InstanceStateUtil {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace utils {
+      class com.annushkaproject.programmerscalculator.utils.ProgrammerOperationsUtil {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace utils {
+      class com.annushkaproject.programmerscalculator.utils.SharedPreferencesUtil {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace utils {
+      class com.annushkaproject.programmerscalculator.utils.StandardOperationsUtil {
+      }
+    }
+  }
+  
+
+  namespace com.annushkaproject.programmerscalculator {
+    namespace utils {
+      class com.annushkaproject.programmerscalculator.utils.c_nmbr_utils {
+      }
+    }
+  }
+  
+
+  com.annushkaproject.programmerscalculator.activities.HistoryActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.annushkaproject.programmerscalculator.activities.MainActivity .up.|> android.support.design.widget.NavigationView.OnNavigationItemSelectedListener
+  com.annushkaproject.programmerscalculator.activities.MainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.annushkaproject.programmerscalculator.fragments.ProgrammerFragment -up-|> android.support.v4.app.Fragment
+  com.annushkaproject.programmerscalculator.fragments.ProgrammerFragment o-- com.annushkaproject.programmerscalculator.model.int_size_enum : bytelengthenum
+  com.annushkaproject.programmerscalculator.fragments.ProgrammerFragment o-- com.annushkaproject.programmerscalculator.model.ProgrammerCalcModel : calcModel
+  com.annushkaproject.programmerscalculator.fragments.StandardFragment -up-|> android.support.v4.app.Fragment
+  com.annushkaproject.programmerscalculator.fragments.StandardFragment o-- com.annushkaproject.programmerscalculator.model.CalculationModel : calcModel
+  com.annushkaproject.programmerscalculator.fragments.ThemesFragment -up-|> android.support.v4.app.Fragment
+  com.annushkaproject.programmerscalculator.fragments.c_handle_decimal_spinboks .up.|> android.widget.AdapterView.OnItemSelectedListener
+  com.annushkaproject.programmerscalculator.fragments.c_handle_decimal_spinboks -up-|> android.app.Activity
+  com.annushkaproject.programmerscalculator.fragments.langs_fragment -up-|> android.support.v4.app.Fragment
+  com.annushkaproject.programmerscalculator.model.HistoryResult -up-|> io.realm.RealmObject
+  com.annushkaproject.programmerscalculator.model.ProgrammerCalcModel o-- com.annushkaproject.programmerscalculator.model.int_size_enum : bytelengthenum
+  com.annushkaproject.programmerscalculator.model.ProgrammerCalcModel o-- com.annushkaproject.programmerscalculator.model.Operator : operator
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
