@@ -59,17 +59,29 @@ public class ProgrammerFragment extends Fragment {
             Button button = getView().findViewById(getResources().getIdentifier("button" + i, "id", packageName));
             int finalI = i;
             button.setOnClickListener((v) -> {
+//                switch (finalI) {
+//                    case 0 : dizit_tekst_viyu.setText("ziro"); break;
+//                    case 1 : dizit_tekst_viyu.setText("vn"); break;
+//                    case 2 : dizit_tekst_viyu.setText("tuu"); break;
+//                    case 3 : dizit_tekst_viyu.setText("Three"); break;
+//                    case 4 : dizit_tekst_viyu.setText("four"); break;
+//                    case 5 : dizit_tekst_viyu.setText("five"); break;
+//                    case 6 : dizit_tekst_viyu.setText("siks"); break;
+//                    case 7 : dizit_tekst_viyu.setText("seven"); break;
+//                    case 8 : dizit_tekst_viyu.setText("eight"); break;
+//                    case 9 : dizit_tekst_viyu.setText("nine"); break;
+//                }
                 switch (finalI) {
-                    case 0 : dizit_tekst_viyu.setText("ziro"); break;
-                    case 1 : dizit_tekst_viyu.setText("vn"); break;
-                    case 2 : dizit_tekst_viyu.setText("tuu"); break;
-                    case 3 : dizit_tekst_viyu.setText("Three"); break;
-                    case 4 : dizit_tekst_viyu.setText("four"); break;
-                    case 5 : dizit_tekst_viyu.setText("five"); break;
-                    case 6 : dizit_tekst_viyu.setText("siks"); break;
-                    case 7 : dizit_tekst_viyu.setText("seven"); break;
-                    case 8 : dizit_tekst_viyu.setText("eight"); break;
-                    case 9 : dizit_tekst_viyu.setText("nine"); break;
+                    case 0 : dizit_tekst_viyu.setText("suny"); break;
+                    case 1 : dizit_tekst_viyu.setText("ek"); break;
+                    case 2 : dizit_tekst_viyu.setText("Do"); break;
+                    case 3 : dizit_tekst_viyu.setText("Tiin"); break;
+                    case 4 : dizit_tekst_viyu.setText("car"); break;
+                    case 5 : dizit_tekst_viyu.setText("pac"); break;
+                    case 6 : dizit_tekst_viyu.setText("chh"); break;
+                    case 7 : dizit_tekst_viyu.setText("saT"); break;
+                    case 8 : dizit_tekst_viyu.setText("ath"); break;
+                    case 9 : dizit_tekst_viyu.setText("nAu"); break;
                 }
                 if (!limit_phen_dizits_recahed) usePressedNumber(((Button) v).getText().toString());
             });
@@ -82,13 +94,21 @@ public class ProgrammerFragment extends Fragment {
             Button button = getView().findViewById(buttonID);
             button.setOnClickListener((v) -> {
                 switch (buttonID) {
-                    case R.id.buttonA : dizit_tekst_viyu.setText("ten"); break;
-                    case R.id.buttonB : dizit_tekst_viyu.setText("zilevn"); break;
-                    case R.id.buttonC : dizit_tekst_viyu.setText("kvAlv"); break;
-                    case R.id.buttonD : dizit_tekst_viyu.setText("dblyu"); break;
-                    case R.id.buttonE : dizit_tekst_viyu.setText("Aksen"); break;
-                    case R.id.buttonF : dizit_tekst_viyu.setText("phen"); break;
+                    case R.id.buttonA : dizit_tekst_viyu.setText("Ds"); break;
+                    case R.id.buttonB : dizit_tekst_viyu.setText("zyarh"); break;
+                    case R.id.buttonC : dizit_tekst_viyu.setText("barh"); break;
+                    case R.id.buttonD : dizit_tekst_viyu.setText("Terh"); break;
+                    case R.id.buttonE : dizit_tekst_viyu.setText("coDH"); break;
+                    case R.id.buttonF : dizit_tekst_viyu.setText("pnDrh"); break;
                 }
+//                switch (buttonID) {
+//                    case R.id.buttonA : dizit_tekst_viyu.setText("ten"); break;
+//                    case R.id.buttonB : dizit_tekst_viyu.setText("zilevn"); break;
+//                    case R.id.buttonC : dizit_tekst_viyu.setText("kvAlv"); break;
+//                    case R.id.buttonD : dizit_tekst_viyu.setText("dblyu"); break;
+//                    case R.id.buttonE : dizit_tekst_viyu.setText("Aksen"); break;
+//                    case R.id.buttonF : dizit_tekst_viyu.setText("phen"); break;
+//                }
 
                 if (!limit_phen_dizits_recahed) {
                     usePressedNumber(((Button) v).getText().toString());

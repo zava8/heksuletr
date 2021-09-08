@@ -38,8 +38,8 @@
     <string name="or_operator_string" translatable="false">or</string>
     <string name="zor_operator_string" translatable="false">zor</string>
     <string name="not_operator_string" translatable="false">not</string>
-    <string name="lsh_operator_string" translatable="false">lsh_V</string>
-    <string name="rsh_operator_string" translatable="false">rsh_W</string>
+    <string name="lsh_operator_string" translatable="false">&lt;&lt;_V</string>
+    <string name="rsh_operator_string" translatable="false">&gt;&gt;_W</string>
     <string name="Asin_operator_string" translatable="false">Asin</string>
     <string name="Acos_operator_string" translatable="false">Acos</string>
     <string name="AtAn_operator_string" translatable="false">AtAn</string>
@@ -51,11 +51,11 @@
     <string name="abs_operator_string" translatable="false">|a|</string>
     <string name="skuareroot_operator_string" translatable="false">√</string>
     <string name="factorial_operator_string" translatable="false">a!</string>
-    <string name="get_remainder_button_string" translatable="false">÷_M</string>
+    <string name="get_remainder_button_string" translatable="false">÷_D</string>
     <string name="heks_cb_label" translatable="false">h8</string>
     <string name="phlot_div_button_label" translatable="false">÷_f</string>
     <string name="decimal_point_label" translatable="false">.0?</string>
-    <string name="app_title_string" translatable="false">zava8.github.io</string>
+    <string name="app_title_string" translatable="false">github/zava8/heksuletr hinDi</string>
     <string name="zlang_nav_title" translatable="false">zlANg</string>
 
     <string-array name="decimal_points_selection_array">
@@ -77,8 +77,8 @@
         <item>pac</item>
         <item>che</item>
         <item>saT</item>
-        <item>ath</item>
-        <item>no</item>
+        <item>et</item>
+        <item>nAu</item>
         <item>Ds</item>
         <item>zyarh</item>
         <item>barh</item>
