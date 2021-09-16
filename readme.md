@@ -1,4 +1,4 @@
-### hexadecimal dizital progrmming calculator
+### hexadesiml dizitl programing kAlkuletr
 ### हेक्साडेसिमल डिजिटल प्रोग्रामिंग कैलकुलेटर
 
 isko install krne ke liye [heksuletr Android apk daunlod](daunlod/heksuletr.apk) kiziye. Aur fir daunlod hone ke bAD Android ke Download folder me zakr instal kiziye. ye heksuletr Apke Android mobile me instal ho zayega. isko
