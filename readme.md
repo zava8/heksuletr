@@ -1,12 +1,21 @@
-# Calculator
+### hexadecimal dizital progrmming calculator
+### हेक्साडेसिमल डिजिटल प्रोग्रामिंग कैलकुलेटर
 
-The Calculator is an Android application for making scientific or programming calculations. The app supports also different color schemes and localized to 6 languages.
+isko install krne ke liye [heksuletr Android apk daunlod](daunlod/heksuletr.apk) kiziye. Aur fir daunlod hone ke bAD Android ke Download folder me zakr instal kiziye. ye heksuletr Apke Android mobile me instal ho zayega. isko
+open krenge Toh yh niche photo me h vAise Dikhega.
 
-Calculator application developed for Metropolia UAS Mobile course.
+![heksuletr photo](cms/hksuletr17mar.png)
 
+is mATths ke bare me kuch photoz h zinki sHayTa se yum(you) hexadecimal sAmAzh payeNge.
 
-## Installation instructions
-Go to Calculator's landing page from your phone:
-https://calc.mstefan99.com
+![hex mAThs](cms/h40kaunt.jpg)
 
-To install the application, just click "Download" button to download the provided apk file, allow installs of unknown apps and tap on the file.
+![hex mAThs](cms/8paise_07.png)
+
+![hex mAThs](cms/8paise8F.png)
+
+![hex mAThs](cms/82g.jpg)
+
+![hex mAThs](cms/bitkoen_nmbrs.png)
+
+![hex mAThs](cms/123_on_off.gif)
