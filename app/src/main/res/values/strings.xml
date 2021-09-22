@@ -33,13 +33,13 @@
 <!--    operator strings-->
     <string name="decimal_point_operator_string" translatable="false">.</string>
     <string name="multiply_operator_string" translatable="false">*</string>
-    <string name="remainder_divide_operator_string" translatable="false">÷_R</string>
-    <string name="And_operator_string" translatable="false">And</string>
-    <string name="or_operator_string" translatable="false">or</string>
-    <string name="zor_operator_string" translatable="false">zor</string>
-    <string name="not_operator_string" translatable="false">not</string>
-    <string name="lsh_operator_string" translatable="false">&lt;&lt;_V</string>
-    <string name="rsh_operator_string" translatable="false">&gt;&gt;_W</string>
+    <string name="remainder_divide_operator_string" translatable="false">÷</string>
+    <string name="And_operator_string" translatable="false">&amp;</string>
+    <string name="or_operator_string" translatable="false">|</string>
+    <string name="zor_operator_string" translatable="false">^</string>
+    <string name="not_operator_string" translatable="false">!</string>
+    <string name="lsh_operator_string" translatable="false">V</string>
+    <string name="rsh_operator_string" translatable="false">w</string>
     <string name="Asin_operator_string" translatable="false">Asin</string>
     <string name="Acos_operator_string" translatable="false">Acos</string>
     <string name="AtAn_operator_string" translatable="false">AtAn</string>
@@ -51,12 +51,13 @@
     <string name="abs_operator_string" translatable="false">|a|</string>
     <string name="skuareroot_operator_string" translatable="false">√</string>
     <string name="factorial_operator_string" translatable="false">a!</string>
-    <string name="get_remainder_button_string" translatable="false">÷_D</string>
+    <string name="get_remainder_button_string" translatable="false">/</string>
     <string name="heks_cb_label" translatable="false">h8</string>
     <string name="phlot_div_button_label" translatable="false">÷_f</string>
     <string name="decimal_point_label" translatable="false">.0?</string>
-    <string name="app_title_string" translatable="false">github/zava8/heksuletr hinDi</string>
+    <string name="app_title_string" translatable="false">github.com/zava8 hex</string>
     <string name="zlang_nav_title" translatable="false">zlANg</string>
+    <string name="or_operator" translatable="false">|</string>
 
     <string-array name="decimal_points_selection_array">
         <item>0</item>
