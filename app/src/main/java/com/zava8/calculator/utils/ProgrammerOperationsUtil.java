@@ -17,7 +17,7 @@ public class ProgrammerOperationsUtil {
             case OR: return or(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
             case XOR: return xor(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
             case AND: return and(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
-            case get_remainder: return mod(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
+//            case get_remainder: return mod(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
             case CHANGE_SIGN: return changeSign(data.getBytelengthenum(), data.getFirstValue());
             case NOT: return not(data.getBytelengthenum(), data.getFirstValue());
             default: return 0;
@@ -104,15 +104,15 @@ public class ProgrammerOperationsUtil {
         }
     }
 
-    private static long mod(@org.jetbrains.annotations.NotNull int_size_enum mode, BigDecimal dividend, BigDecimal divider) {
-        switch (mode) {
-            case l8: return dividend.longValue() % divider.longValue();
-            case l4: return dividend.intValue() % divider.intValue();
-            case l2: return (short) (dividend.shortValue() % divider.shortValue());
-            case l1: return (byte) (dividend.byteValue() % divider.byteValue());
-            default: return 0;
-        }
-    }
+//    private static long mod(@org.jetbrains.annotations.NotNull int_size_enum mode, BigDecimal dividend, BigDecimal divider) {
+//        switch (mode) {
+//            case l8: return dividend.longValue() % divider.longValue();
+//            case l4: return dividend.intValue() % divider.intValue();
+//            case l2: return (short) (dividend.shortValue() % divider.shortValue());
+//            case l1: return (byte) (dividend.byteValue() % divider.byteValue());
+//            default: return 0;
+//        }
+//    }
 
     private static long multiply(int_size_enum mode, BigDecimal value1, BigDecimal value2) {
         switch (mode) {

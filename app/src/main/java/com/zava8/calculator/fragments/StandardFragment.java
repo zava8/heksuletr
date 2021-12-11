@@ -92,7 +92,7 @@ public class StandardFragment extends Fragment {
     private void fillOperatorButtons() {
         operatorButtons.add(getView().findViewById(R.id.buttonPlus));
         operatorButtons.add(getView().findViewById(R.id.buttonMinus));
-        operatorButtons.add(getView().findViewById(R.id.buttonRDivide));
+        operatorButtons.add(getView().findViewById(R.id.button_divide));
         operatorButtons.add(getView().findViewById(R.id.buttonMultiply));
         operatorButtons.add(getView().findViewById(R.id.buttonPercent));
 

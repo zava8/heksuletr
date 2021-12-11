@@ -81,10 +81,10 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRDivide" />
+        app:layout_constraintTop_toBottomOf="@+id/button_divide" />
 
     <Button
-        android:id="@+id/buttonRDivide"
+        android:id="@+id/button_divide"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -343,7 +343,7 @@
         android:text="Not"
         android:textColor="?attr/secondaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRDivide"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
         app:layout_constraintStart_toEndOf="@+id/buttonRSH"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 

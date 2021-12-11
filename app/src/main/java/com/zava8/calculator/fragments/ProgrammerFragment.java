@@ -114,7 +114,7 @@ public class ProgrammerFragment extends Fragment {
 
     private void setupOperatorButtons() {
         int[] operatorButtonIDs = new int[]{R.id.buttonMod, R.id.button_zor, R.id.buttonOR, R.id.buttonAND,
-                R.id.buttonLSH, R.id.buttonRSH, R.id.buttonNOT, R.id.buttonRDivide, R.id.buttonMultiply,
+                R.id.buttonLSH, R.id.buttonRSH, R.id.buttonNOT, R.id.button_divide, R.id.buttonMultiply,
                 R.id.buttonMinus, R.id.buttonPlus};
         for (int buttonID : operatorButtonIDs) { Button button = getView().findViewById(buttonID);button.setOnClickListener((v) -> {
             if (!limit_phen_dizits_recahed) {
@@ -298,7 +298,7 @@ public class ProgrammerFragment extends Fragment {
             if(null != button) {
                 button.setEnabled(mode);
                 if (button.isEnabled()) button.setAlpha(1);
-                else button.setAlpha(0.5f);
+                else button.setAlpha(0.3f);
             }
         }
     }
@@ -308,14 +308,14 @@ public class ProgrammerFragment extends Fragment {
             if(null != button) {
                 button.setEnabled(mode);
                 if (button.isEnabled()) button.setAlpha(1);
-                else button.setAlpha(0.5f);
+                else button.setAlpha(0.3f);
             }
         }
     }
 
     private void setOperatorButtonsClickable(boolean mode) {
         int[] letterButtonIDs = new int[]{
-                R.id.button_decimal_point,  R.id.buttonRDivide,
+                R.id.button_decimal_point,  R.id.button_divide,
                 R.id.buttonMod,
                 R.id.buttonMinus, R.id.buttonPlus , R.id.buttonMultiply, R.id.buttonPower,
                 R.id.button_decimal_point, R.id.buttonEquals,
@@ -326,7 +326,7 @@ public class ProgrammerFragment extends Fragment {
             if(null != button) {
                 button.setEnabled(mode);
                 if (button.isEnabled()) button.setAlpha(1);
-                else button.setAlpha(0.5f);
+                else button.setAlpha(0.3f);
             }
         }
     }

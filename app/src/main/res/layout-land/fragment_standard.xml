@@ -173,13 +173,13 @@
         android:text="%"
         android:textColor="?attr/accentColor"
         app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRDivide"
+        app:layout_constraintEnd_toStartOf="@+id/button_divide"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonPi"
         app:layout_constraintTop_toBottomOf="@+id/buttonDel" />
 
     <Button
-        android:id="@+id/buttonRDivide"
+        android:id="@+id/button_divide"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -241,7 +241,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRDivide" />
+        app:layout_constraintTop_toBottomOf="@+id/button_divide" />
 
     <TextView
         android:id="@+id/result_tekst_viyu"
