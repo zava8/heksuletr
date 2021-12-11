@@ -58,40 +58,24 @@ public class ProgrammerFragment extends Fragment {
             Button button = getView().findViewById(getResources().getIdentifier("button" + i, "id", packageName));
             int finalI = i;
             button.setOnClickListener((v) -> {
-//                switch (finalI) {
-//                    case 0 : dizit_tekst_viyu.setText("ziro"); break;
-//                    case 1 : dizit_tekst_viyu.setText("vn"); break;
-//                    case 2 : dizit_tekst_viyu.setText("tuu"); break;
-//                    case 3 : dizit_tekst_viyu.setText("Three"); break;
-//                    case 4 : dizit_tekst_viyu.setText("four"); break;
-//                    case 5 : dizit_tekst_viyu.setText("five"); break;
-//                    case 6 : dizit_tekst_viyu.setText("siks"); break;
-//                    case 7 : dizit_tekst_viyu.setText("seven"); break;
-//                    case 8 : dizit_tekst_viyu.setText("eight"); break;
-//                    case 9 : dizit_tekst_viyu.setText("nine"); break;
-//                }
-                switch (finalI) {
-                    case 0 : dizit_tekst_viyu.setText("suny"); break;
-                    case 1 : dizit_tekst_viyu.setText("ek"); break;
-                    case 2 : dizit_tekst_viyu.setText("Wo"); break;
-                    case 3 : dizit_tekst_viyu.setText("Tiin"); break;
-                    case 4 : dizit_tekst_viyu.setText("car"); break;
-                    case 5 : dizit_tekst_viyu.setText("pac"); break;
-                    case 6 : dizit_tekst_viyu.setText("chh"); break;
-                    case 7 : dizit_tekst_viyu.setText("saT"); break;
-                    case 8 : dizit_tekst_viyu.setText("ath"); break;
-                    case 9 : dizit_tekst_viyu.setText("nou"); break;
-                }
-                if((finalI >0 || finalI <10)) {
-                    int khlen = key_hist.length();
-                    if (khlen>15)
-                    {
-                        key_hist = key_hist.substring(khlen - 15);
+                if (!limit_phen_dizits_recahed) {
+                    switch (finalI) {
+                        case 0: dizit_tekst_viyu.setText("suny");break; case 1: dizit_tekst_viyu.setText("ek");break;
+                        case 2: dizit_tekst_viyu.setText("wo");break; case 3: dizit_tekst_viyu.setText("xiin");break;
+                        case 4: dizit_tekst_viyu.setText("car");break; case 5: dizit_tekst_viyu.setText("pac");break;
+                        case 6: dizit_tekst_viyu.setText("che");break; case 7: dizit_tekst_viyu.setText("sax");break;
+                        case 8: dizit_tekst_viyu.setText("ath");break; case 9: dizit_tekst_viyu.setText("no");break;
                     }
-                    key_hist = key_hist + finalI ;
-                    ekuation_tekst_viyu.setText(key_hist);
+                    usePressedNumber(((Button) v).getText().toString());
+                    if (!limit_phen_dizits_recahed) {
+                        if ((finalI > 0 || finalI < 10)) {
+                            int khlen = key_hist.length();
+                            if (khlen > 15) key_hist = key_hist.substring(khlen - 15);
+                            key_hist = key_hist + finalI;
+                            ekuation_tekst_viyu.setText(key_hist);
+                        }
+                    }
                 }
-                if (!limit_phen_dizits_recahed) usePressedNumber(((Button) v).getText().toString());
             });
         }
     }
@@ -101,33 +85,28 @@ public class ProgrammerFragment extends Fragment {
         for (int buttonID : letterButtonIDs) {
             Button button = getView().findViewById(buttonID);
             button.setOnClickListener((v) -> {
-                switch (buttonID) {
-                    case R.id.buttonA : dizit_tekst_viyu.setText("Ws"); break;
-                    case R.id.buttonB : dizit_tekst_viyu.setText("zyarh"); break;
-                    case R.id.buttonC : dizit_tekst_viyu.setText("barh"); break;
-                    case R.id.buttonD : dizit_tekst_viyu.setText("Terh"); break;
-                    case R.id.buttonE : dizit_tekst_viyu.setText("coWH"); break;
-                    case R.id.buttonF : dizit_tekst_viyu.setText("pnWrh"); break;
-                }
-//                switch (buttonID) {
-//                    case R.id.buttonA : dizit_tekst_viyu.setText("ten"); break;
-//                    case R.id.buttonB : dizit_tekst_viyu.setText("zilevn"); break;
-//                    case R.id.buttonC : dizit_tekst_viyu.setText("kvAlv"); break;
-//                    case R.id.buttonD : dizit_tekst_viyu.setText("dblyu"); break;
-//                    case R.id.buttonE : dizit_tekst_viyu.setText("Aksen"); break;
-//                    case R.id.buttonF : dizit_tekst_viyu.setText("phen"); break;
-//                }
-
                 if (!limit_phen_dizits_recahed) {
+                    switch (buttonID) {
+                        case R.id.buttonA : dizit_tekst_viyu.setText("Ws"); break;
+                        case R.id.buttonB : dizit_tekst_viyu.setText("zyarh"); break;
+                        case R.id.buttonC : dizit_tekst_viyu.setText("barh"); break;
+                        case R.id.buttonD : dizit_tekst_viyu.setText("Terh"); break;
+                        case R.id.buttonE : dizit_tekst_viyu.setText("coWH"); break;
+                        case R.id.buttonF : dizit_tekst_viyu.setText("pnWrh"); break;
+                    }
                     String hekstr = ((Button) v).getText().toString() ;
                     usePressedNumber(hekstr);
+                    if (!limit_phen_dizits_recahed) {
                         int khlen = key_hist.length();
-                        if (khlen>15)
-                        {
-                            key_hist = key_hist.substring(khlen - 15);
-                        }
-                        key_hist = key_hist + hekstr ;
+                        if (khlen > 15) key_hist = key_hist.substring(khlen - 15);
+                        key_hist = key_hist + hekstr;
                         ekuation_tekst_viyu.setText(key_hist);
+                    }
+                }
+                else {
+                    disableAllButtons();
+                    disableOperatorButtons();
+                    limit_phen_dizits_recahed = true ;
                 }
             });
         }
@@ -150,19 +129,29 @@ public class ProgrammerFragment extends Fragment {
                 ekuation_tekst_viyu.setText(key_hist);
                 usePressedOperator(operator);
             }
+            else {
+                disableAllButtons();
+                disableOperatorButtons();
+                limit_phen_dizits_recahed = true ;
+            }
             });
         }
     }
 
     private void setupCalculateButton() { Button equalsButton = getView().findViewById(R.id.buttonEquals);equalsButton.setOnClickListener(v -> {
-            Button button = (Button) v; System.out.println(button.getText().toString());
+            Button button = (Button) v;
+            //System.out.println(button.getText().toString());
             useEqualsOperator();
         });
     }
-
+    private String currentString() { return u5h_tekst_viyu.getText().toString(); }
     private void setupDeleteButton() { Button delButton = getView().findViewById(R.id.buttonDel); delButton.setOnClickListener(v -> {
             String currentString = currentString();
-            if (limit_phen_dizits_recahed) { enableButtonsALL(); enableOperatorButtons(); limit_phen_dizits_recahed = false ;}
+            if (limit_phen_dizits_recahed) {
+                enableButtonsALL();
+                enableOperatorButtons();
+                limit_phen_dizits_recahed = false ;
+            }
             else if (!currentString.equals("-") && currentString.length() > 1) {
                     currentString = currentString.substring(0, currentString.length() - 1);
                     int khlen = key_hist.length();
@@ -187,7 +176,6 @@ public class ProgrammerFragment extends Fragment {
             updateText(updatedString);
         });
     }
-    private String currentString() { return u5h_tekst_viyu.getText().toString(); }
     private void setupWordLengthButton() { Button modeButton = getView().findViewById(R.id.buttonLength);modeButton.setOnClickListener(v -> {
             long val = Long.parseLong(currentString(), calcModel.get_nmbr_base());
             if (bytelengthenum.ordinal() < 3) {
@@ -252,10 +240,10 @@ public class ProgrammerFragment extends Fragment {
     private String formatText(long number) { return Long.toString(number, calcModel.get_nmbr_base()).toUpperCase(); }
 
     private void updateText(String updatedText) {
-        if(updatedText.length() > limit_dizits)
+        if(updatedText.length() > limit_dizits - 1 )
         {
             disableAllButtons();
-            disableOperatorButtons();
+//            disableOperatorButtons();
             limit_phen_dizits_recahed = true ;
         }
         else
@@ -291,21 +279,37 @@ public class ProgrammerFragment extends Fragment {
 
     private void disableOperatorButtons() { setOperatorButtonsClickable(false); }
     private void enableOperatorButtons() { setOperatorButtonsClickable(true); }
-    private void disableAllButtons() { setNumberButtonsClickable(10, false);setLetterButtonsClickable(false); }
-//    private void enableButtonsBIN() { disableAllButtons();setNumberButtonsClickable(2, true); }
-//    private void enableButtonsOCT() { disableAllButtons();setNumberButtonsClickable(8, true); }
-    private void enableButtonsDEC() { disableAllButtons();setNumberButtonsClickable(10, true); }
-    private void enableButtonsALL() { setLetterButtonsClickable(true);setNumberButtonsClickable(10, true); }
-
+    private void disableAllButtons() {
+        setNumberButtonsClickable(10, false);
+        setLetterButtonsClickable(false);
+    }
+    private void enableButtonsDEC() {
+        setLetterButtonsClickable(false);
+        setNumberButtonsClickable(10, true);
+    }
+    private void enableButtonsALL() {
+        setLetterButtonsClickable(true);
+        setNumberButtonsClickable(10, true);
+    }
     private void setLetterButtonsClickable(boolean mode) {
         int[] letterButtonIDs = new int[]{R.id.buttonA, R.id.buttonB, R.id.buttonC, R.id.buttonD, R.id.buttonE, R.id.buttonF};
-        for (int buttonID : letterButtonIDs) { Button button = getView().findViewById(buttonID);button.setEnabled(mode); }
+        for (int buttonID : letterButtonIDs) {
+            Button button = getView().findViewById(buttonID);
+            if(null != button) {
+                button.setEnabled(mode);
+                if (button.isEnabled()) button.setAlpha(1);
+                else button.setAlpha(0.5f);
+            }
+        }
     }
-
     private void setNumberButtonsClickable(int range, boolean mode) {
         for (int i = 0; i < range; i++) {
             Button button = getView().findViewById(getResources().getIdentifier("button" + i, "id", packageName));
-            button.setEnabled(mode);
+            if(null != button) {
+                button.setEnabled(mode);
+                if (button.isEnabled()) button.setAlpha(1);
+                else button.setAlpha(0.5f);
+            }
         }
     }
 
@@ -317,6 +321,13 @@ public class ProgrammerFragment extends Fragment {
                 R.id.button_decimal_point, R.id.buttonEquals,
                 R.id.button_zor, R.id.buttonOR, R.id.buttonNOT , R.id.buttonAND , R.id.buttonLSH , R.id.buttonRSH,
         };
-        for (int buttonID : letterButtonIDs) { Button button = getView().findViewById(buttonID);button.setEnabled(mode); }
+        for (int buttonID : letterButtonIDs) {
+            Button button = getView().findViewById(buttonID);
+            if(null != button) {
+                button.setEnabled(mode);
+                if (button.isEnabled()) button.setAlpha(1);
+                else button.setAlpha(0.5f);
+            }
+        }
     }
 }

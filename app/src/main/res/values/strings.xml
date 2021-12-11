@@ -39,7 +39,7 @@
     <string name="zor_operator_string" translatable="false">^</string>
     <string name="not_operator_string" translatable="false">!</string>
     <string name="lsh_operator_string" translatable="false">V</string>
-    <string name="rsh_operator_string" translatable="false">w</string>
+    <string name="rsh_operator_string" translatable="false">W</string>
     <string name="Asin_operator_string" translatable="false">Asin</string>
     <string name="Acos_operator_string" translatable="false">Acos</string>
     <string name="AtAn_operator_string" translatable="false">AtAn</string>
