@@ -64,7 +64,7 @@ public class ProgrammerFragment extends Fragment {
                         case 2: dizit_tekst_viyu.setText("wo");break; case 3: dizit_tekst_viyu.setText("xiin");break;
                         case 4: dizit_tekst_viyu.setText("car");break; case 5: dizit_tekst_viyu.setText("pac");break;
                         case 6: dizit_tekst_viyu.setText("che");break; case 7: dizit_tekst_viyu.setText("sax");break;
-                        case 8: dizit_tekst_viyu.setText("ath");break; case 9: dizit_tekst_viyu.setText("no");break;
+                        case 8: dizit_tekst_viyu.setText("qath");break; case 9: dizit_tekst_viyu.setText("no");break;
                     }
                     usePressedNumber(((Button) v).getText().toString());
                     if (!limit_phen_dizits_recahed) {
@@ -87,12 +87,12 @@ public class ProgrammerFragment extends Fragment {
             button.setOnClickListener((v) -> {
                 if (!limit_phen_dizits_recahed) {
                     switch (buttonID) {
-                        case R.id.buttonA : dizit_tekst_viyu.setText("Ws"); break;
+                        case R.id.buttonA : dizit_tekst_viyu.setText("ws"); break;
                         case R.id.buttonB : dizit_tekst_viyu.setText("zyarh"); break;
                         case R.id.buttonC : dizit_tekst_viyu.setText("barh"); break;
-                        case R.id.buttonD : dizit_tekst_viyu.setText("Terh"); break;
-                        case R.id.buttonE : dizit_tekst_viyu.setText("coWH"); break;
-                        case R.id.buttonF : dizit_tekst_viyu.setText("pnWrh"); break;
+                        case R.id.buttonD : dizit_tekst_viyu.setText("xerj"); break;
+                        case R.id.buttonE : dizit_tekst_viyu.setText("chowj"); break;
+                        case R.id.buttonF : dizit_tekst_viyu.setText("pnwrj"); break;
                     }
                     String hekstr = ((Button) v).getText().toString() ;
                     usePressedNumber(hekstr);
