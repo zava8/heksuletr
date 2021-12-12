@@ -10,6 +10,8 @@
 # Java class files
 *.class
 
+# diliit folder
+diliit/ 
 # Generated files
 bin/
 gen/
