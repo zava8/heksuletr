@@ -13,7 +13,7 @@ public enum Operator {
     public static Operator operatorForTitle(String title) {
         switch (title) {
             case "+": return ADD;  case "-": return SUBTRACT; case "*": return MULTIPLY;
-            case "÷": return get_remainder; case "/": return remainder_divide; case "%": return PERCENT;
+            case "÷": return remainder_divide; case "/": return remainder_divide; case "%": return PERCENT;
             case "&": return AND; case "|": return OR;
             case "^": return XOR; case "!": return NOT; case "V": return LSH; case "w": return RSH;
             case "Asin": return ASIN; case "Acos": return ACOS; case "Atan": return ATAN; case "sin": return SIN;
@@ -27,7 +27,8 @@ public enum Operator {
         switch (this) {
             case ADD: case SUBTRACT: case MULTIPLY: case remainder_divide:
             case OR: case AND: case LSH: case RSH:
-            case XOR: case get_remainder: case POWER: return true;
+            case XOR: case get_remainder:
+            case POWER: return true;
             default: return false;
         }
     }
