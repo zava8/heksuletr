@@ -97,20 +97,20 @@
 
 <!-- //////////////////////////////// -->
     <Button android:id="@+id/buttonOR" android:layout_width="0dp" android:layout_height="@dimen/btn_ro2_hait"
-        android:background="@drawable/calculator_button_secondary" android:textColor="?attr/primaryTextColor"
+        android:background="@drawable/calculator_button_secondary" android:textColor="@color/logical_operator_Color"
         android:fontFamily="@font/u5" android:text="@string/or_operator" android:textSize="@dimen/or_tekst_size" android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/buttonAND" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heks_check_boks" />
 
     <Button android:id="@+id/buttonAND" android:layout_width="0dp" android:layout_height="0dp"
-        android:background="@drawable/calculator_button_secondary" android:textColor="?attr/primaryTextColor"
+        android:background="@drawable/calculator_button_secondary" android:textColor="@color/logical_operator_Color"
         android:fontFamily="@font/u5" android:text="@string/And_operator_string" android:textSize="@dimen/and_tekst_size" android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="@id/buttonOR" app:layout_constraintTop_toBottomOf="@+id/heks_check_boks"
         app:layout_constraintStart_toEndOf="@+id/buttonOR" app:layout_constraintEnd_toStartOf="@+id/button_zor"  />
 
   <Button    android:id="@+id/button_zor" android:layout_width="0dp"    android:layout_height="0dp"
       android:background="@drawable/calculator_button_secondary" android:textAllCaps="false"
-      android:text="@string/zor_operator_string" android:textSize="@dimen/zor_tekst_size" android:fontFamily="@font/u5" android:textColor="?attr/primaryTextColor"
+      android:text="@string/zor_operator_string" android:textSize="@dimen/zor_tekst_size" android:fontFamily="@font/u5" android:textColor="@color/logical_operator_Color"
       app:layout_constraintBottom_toBottomOf="@id/buttonOR" app:layout_constraintTop_toBottomOf="@+id/heks_check_boks"
       app:layout_constraintStart_toEndOf="@+id/buttonAND"    app:layout_constraintEnd_toStartOf="@+id/buttonMod"    />
 
@@ -130,18 +130,18 @@
   <Button    android:id="@+id/buttonNOT"    android:layout_width="0dp"    android:layout_height="@dimen/btn_ro3_hait"
       android:background="@drawable/calculator_button_secondary" android:textAllCaps="false"
       android:text="@string/not_operator_string" android:textSize="@dimen/not_tekst_size"
-      android:fontFamily="@font/u5" android:textColor="?attr/primaryTextColor"
+      android:fontFamily="@font/u5" android:textColor="@color/logical_operator_Color"
       app:layout_constraintStart_toStartOf="parent"     app:layout_constraintEnd_toStartOf="@+id/buttonLSH"
       app:layout_constraintTop_toBottomOf="@+id/buttonOR" />/>
 
   <Button    android:id="@+id/buttonLSH" android:fontFamily="@font/u8" android:layout_width="0dp" android:layout_height="0dp"
       android:text="@string/lsh_operator_string" android:textSize="@dimen/lsh_tekst_size"
-      android:background="@drawable/calculator_button_secondary" android:textColor="?attr/primaryTextColor"  android:textAllCaps="false"
+      android:background="@drawable/calculator_button_secondary" android:textColor="@color/logical_operator_Color"  android:textAllCaps="false"
       app:layout_constraintBottom_toBottomOf="@id/buttonNOT" app:layout_constraintTop_toBottomOf="@+id/buttonOR"
    app:layout_constraintStart_toEndOf="@+id/buttonNOT" app:layout_constraintEnd_toStartOf="@+id/buttonRSH"    />
 
   <Button    android:id="@+id/buttonRSH"    android:layout_width="0dp"    android:layout_height="0dp"
-   android:textColor="?attr/primaryTextColor" android:background="@drawable/calculator_button_secondary"
+   android:textColor="@color/logical_operator_Color" android:background="@drawable/calculator_button_secondary"
    android:text="@string/rsh_operator_string"  android:textSize="@dimen/rsh_tekst_size"
       android:fontFamily="@font/u8" android:textAllCaps="false"
       app:layout_constraintBottom_toBottomOf="@id/buttonNOT" app:layout_constraintTop_toBottomOf="@+id/buttonOR"
