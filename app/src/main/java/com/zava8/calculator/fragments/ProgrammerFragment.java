@@ -113,7 +113,7 @@ public class ProgrammerFragment extends Fragment {
     }
 
     private void setupOperatorButtons() {
-        int[] operatorButtonIDs = new int[]{R.id.buttonMod, R.id.button_zor, R.id.buttonOR, R.id.buttonAND,
+        int[] operatorButtonIDs = new int[]{R.id.button_pover, R.id.button_zor, R.id.buttonOR, R.id.buttonAND,
                 R.id.buttonLSH, R.id.buttonRSH, R.id.buttonNOT, R.id.buttonRDivide, R.id.buttonMultiply,
                 R.id.buttonMinus, R.id.buttonPlus};
         for (int buttonID : operatorButtonIDs) { Button button = getView().findViewById(buttonID);button.setOnClickListener((v) -> {
@@ -316,7 +316,7 @@ public class ProgrammerFragment extends Fragment {
     private void setOperatorButtonsClickable(boolean mode) {
         int[] letterButtonIDs = new int[]{
                 R.id.button_decimal_point,  R.id.buttonRDivide,
-                R.id.buttonMod,
+                R.id.button_pover,
                 R.id.buttonMinus, R.id.buttonPlus , R.id.buttonMultiply, R.id.buttonPower,
                 R.id.button_decimal_point, R.id.buttonEquals,
                 R.id.button_zor, R.id.buttonOR, R.id.buttonNOT , R.id.buttonAND , R.id.buttonLSH , R.id.buttonRSH,

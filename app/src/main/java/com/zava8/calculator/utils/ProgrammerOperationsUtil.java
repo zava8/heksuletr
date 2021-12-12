@@ -18,6 +18,7 @@ public class ProgrammerOperationsUtil {
             case XOR: return xor(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
             case AND: return and(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
             case get_remainder: return mod(data.getBytelengthenum(), data.getFirstValue(), data.getSecondValue());
+            case POWER: return data.getFirstValue().pow(data.getSecondValue().intValue()).longValue();
             case CHANGE_SIGN: return changeSign(data.getBytelengthenum(), data.getFirstValue());
             case NOT: return not(data.getBytelengthenum(), data.getFirstValue());
             default: return 0;
