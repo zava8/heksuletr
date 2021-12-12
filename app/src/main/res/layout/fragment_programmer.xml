@@ -21,19 +21,10 @@
         app:layout_constraintTop_toBottomOf="@+id/result_tekst_viyu"/>
 
 <!--    android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"-->
-    <TextView
-        android:id="@+id/ekuation_tekst_viyu"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:fontFamily="@font/u5h"
-        android:scrollbars="horizontal"
-        android:text=""
-        android:textAlignment="textEnd"
-        android:textColor="?attr/primaryTextColor"
-        android:textSize="@dimen/ekuation_tekst_viyu_size"
-        app:layout_constraintEnd_toStartOf="@+id/dizit_tekst_viyu"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_binary_viyu" />
+    <TextView android:id="@+id/ekuation_tekst_viyu" android:layout_width="0dp" android:layout_height="48dp" android:fontFamily="@font/u5h"
+        android:text="" android:textAlignment="textEnd" android:textColor="?attr/primaryTextColor" android:textSize="@dimen/ekuation_tekst_viyu_size"
+        android:scrollbars="horizontal" app:layout_constraintEnd_toStartOf="@+id/dizit_tekst_viyu"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/result_binary_viyu" />
 
 <!--    android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"-->
     <TextView android:id="@+id/dizit_tekst_viyu" android:layout_width="96dp" android:layout_height="48dp"
@@ -41,10 +32,6 @@
         android:textColor="?attr/primaryTextColor" android:textSize="@dimen/dizit_tekst_viyu_size"
         app:layout_constraintStart_toEndOf="@+id/ekuation_tekst_viyu" app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_binary_viyu" />
-
-
-<!--  app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/buttonDel"-->
-
 <!-- //////////////////////////////// -->
    <!-- android:layout_height="104dp" RadioGroup oriznl-->
     <CheckBox android:id="@+id/heks_check_boks" android:checked="true" android:layout_width="0dp" android:layout_height="@dimen/btn_ro1_hait"
@@ -66,39 +53,16 @@
         app:layout_constraintBottom_toBottomOf="@id/heks_check_boks" app:layout_constraintTop_toBottomOf="@+id/ekuation_tekst_viyu"
         app:layout_constraintStart_toEndOf="@+id/decimal_precision_spinner"   app:layout_constraintEnd_toStartOf="@id/buttonDel" />
 
-<!--    <Button    android:id="@+id/buttonFdivide"    android:layout_width="0dp"    android:layout_height="0dp"-->
-<!--        android:background="@drawable/calculator_button_main" android:textColor="?attr/primaryTextColor"-->
-<!--        android:text="@string/phlot_div_button_label" android:fontFamily="@font/u5" android:textAllCaps="false" android:textSize="@dimen/f_tekst_size"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/heks_check_boks" app:layout_constraintTop_toBottomOf="@+id/inputField2"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/buttonLength"   app:layout_constraintEnd_toStartOf="@id/buttonDel" />-->
-
-
-
-<!--  <Button    android:id="@+id/buttonMode"    android:layout_width="75dp"    android:layout_height="40dp"    android:layout_marginStart="8dp"-->
-<!--      android:background="@drawable/calculator_button_main"    android:text="Mode" android:textAllCaps="false"-->
-<!--      android:fontFamily="@font/u5"  android:textColor="?attr/primaryTextColor"-->
-<!--      app:layout_constraintTop_toTopOf="@+id/buttonDel" app:layout_constraintBottom_toBottomOf="@+id/heks_check_boks"-->
-<!--      app:layout_constraintStart_toEndOf="@+id/buttonLength"    />-->
-
-    <Button
-        android:id="@+id/buttonDel"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/calculator_button_main"
-        android:fontFamily="@font/u8"
-        android:text="J"
-        android:textAlignment="center"
-        android:textColor="@color/deleteTextColor"
-        android:textSize="@dimen/del_tekst_size"
-        app:layout_constraintBottom_toBottomOf="@id/heks_check_boks"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonLength"
-        app:layout_constraintTop_toBottomOf="@+id/ekuation_tekst_viyu" />
+    <Button android:id="@+id/buttonDel" android:layout_width="0dp" android:layout_height="0dp" android:background="@drawable/calculator_button_main"
+        android:fontFamily="@font/u8" android:text="J" android:textAlignment="center"
+        android:textColor="@color/deleteTextColor" android:textSize="@dimen/del_tekst_size"
+        app:layout_constraintBottom_toBottomOf="@id/heks_check_boks" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonLength" app:layout_constraintTop_toBottomOf="@+id/ekuation_tekst_viyu" />
 
 <!-- //////////////////////////////// -->
     <Button android:id="@+id/buttonOR" android:layout_width="0dp" android:layout_height="@dimen/btn_ro2_hait"
         android:background="@drawable/calculator_button_secondary" android:textColor="@color/logical_operator_Color"
-        android:fontFamily="@font/u5" android:text="@string/or_operator" android:textSize="@dimen/or_tekst_size" android:textAllCaps="false"
+        android:fontFamily="@font/u5" android:text="@string/or_operator_string" android:textSize="@dimen/or_tekst_size" android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/buttonAND" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heks_check_boks" />
 

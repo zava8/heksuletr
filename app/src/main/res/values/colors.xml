@@ -14,9 +14,9 @@
     <!-- color of zor button -->
 <!--    <color name="primaryTextColor">#606060</color>-->
     <color name="primaryTextColor">#000000</color>
-    <color name="deleteTextColor">#ff0000</color>
-    <color name="logical_operator_Color">#0000ff</color>
-    <color name="arthmetic_operator_color">#00aa55</color>
+    <color name="deleteTextColor">#cc0022</color>
+    <color name="logical_operator_Color">#113388</color>
+    <color name="arthmetic_operator_color">#006622</color>
 
     <color name="secondaryTextColor">#898989</color>
     <!-- <color name="disabledTextColor">#DDDDDD</color> -->

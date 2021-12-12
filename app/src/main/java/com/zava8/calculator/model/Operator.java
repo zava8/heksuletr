@@ -9,13 +9,16 @@ public enum Operator {
     LN, LOG,
     DENOMINATOR, EXPONENT_POWER, SQUARE, POWER, SQUARE_ROOT,
     ABS, FACTORIAL, UNKNOWN;
-
     public static Operator operatorForTitle(String title) {
         switch (title) {
             case "+": return ADD;  case "-": return SUBTRACT; case "*": return MULTIPLY;
             case "÷": return remainder_divide; case "/": return remainder_divide; case "%": return PERCENT;
             case "&": return AND; case "|": return OR;
-            case "^": return XOR; case "!": return NOT; case "V": return LSH; case "w": return RSH;
+            case "^": return XOR; case "!": return NOT;
+            case "V": return LSH; case "w": return RSH;
+            case "and(&)": return AND; case "or(|)": return OR;
+            case "zor(^)": return XOR; case "not(!)": return NOT;
+            case "lsh(V)": return LSH; case "rsh(W)": return RSH;
             case "Asin": return ASIN; case "Acos": return ACOS; case "Atan": return ATAN; case "sin": return SIN;
             case "cos": return COS; case "tAn": return TAN; case "ln": return LN; case "log": return LOG;
       case "1/a": return DENOMINATOR; case "a^n": return EXPONENT_POWER; case "a^2": return SQUARE; case "a^y": return POWER;

@@ -34,12 +34,12 @@
     <string name="decimal_point_operator_string" translatable="false">.</string>
     <string name="multiply_operator_string" translatable="false">*</string>
     <string name="remainder_divide_operator_string" translatable="false">÷</string>
-    <string name="And_operator_string" translatable="false">&amp;</string>
-    <string name="or_operator_string" translatable="false">|</string>
-    <string name="zor_operator_string" translatable="false">^</string>
-    <string name="not_operator_string" translatable="false">!</string>
-    <string name="lsh_operator_string" translatable="false">V</string>
-    <string name="rsh_operator_string" translatable="false">W</string>
+    <string name="And_operator_string" translatable="false">and(&amp;)</string>
+    <string name="or_operator_string" translatable="false">or(|)</string>
+    <string name="zor_operator_string" translatable="false">zor(^)</string>
+    <string name="not_operator_string" translatable="false">not(!)</string>
+    <string name="lsh_operator_string" translatable="false">lsh(V)</string>
+    <string name="rsh_operator_string" translatable="false">rsh(W)</string>
     <string name="Asin_operator_string" translatable="false">Asin</string>
     <string name="Acos_operator_string" translatable="false">Acos</string>
     <string name="AtAn_operator_string" translatable="false">AtAn</string>
